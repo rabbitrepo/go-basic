@@ -55,10 +55,16 @@
 
 package main
 
-import {
+import (
 	"github.com/rabbitrepo/go-basic/rabbit"
-}
+)
 
 func main() {
-	rabbit.helloRabbit()
+	rabbit.HelloRabbit()
+	rabbit.HelloRabbit2()
+	// rabbit.HelloSecret()
 }
+
+// rabbit.Hello => Public Function
+// rabbit.hello => Private Function (can be used inside the module)
+// 1 Folder = 1 Package | Suggested that folder name = package name
